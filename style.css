@@ -14,9 +14,10 @@ body {
     align-items: center;
     background-color: #12121a;
 }
+
 .calc {
-    height: 24rem;
-    width: 16rem;
+    height: 30rem;
+    width: 20rem;
     padding: 15px;
     border: 1px solid;
     border-radius: 5px;
@@ -26,7 +27,7 @@ body {
 }
 
 .calc-display {
-    height: 4rem;
+    height: 5rem;
     width: 95%;
     margin: 0 auto;
     font-size: 1.5em;
@@ -39,54 +40,69 @@ body {
     outline: none;
     color: #000;
 }
-.calc-butns{
+
+.calc-butns {
     display: grid;
     grid-template-columns: 75% 1fr;
     grid-template-areas:
-     "operators operators"
-     "numbers calc-result"
-     ;
+        "operators operators"
+        "numbers calc-result"
+    ;
 }
+
 .calc-btns-operators {
-    grid-area:operators;
+    grid-area: operators;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
-.calc-btns-numbers{
-    grid-area:numbers;
+
+.calc-btns-numbers {
+    grid-area: numbers;
     display: grid;
     grid-gap: 8px;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
 }
-.calc-result{
-    grid-area:calc-result;
-    width: 3.2rem;
+
+.calc-result {
+    grid-area: calc-result;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
-.btn, .btn-result, .btn-eraser, .btn-clear {
-    height: 3rem;
-    width: 3rem;
+
+.btn,
+.btn-result,
+.btn-eraser,
+.btn-clear {
+    height: 4rem;
+    width: 4rem;
     padding-left: 8px;
     font-size: 1.5rem;
     background-color: #008080;
     border: 1px groove transparent;
     border-radius: 5px;
 }
-.btn--multi{
+
+.btn--multi {
     padding-top: 12px;
 }
-.btn-eraser,.btn--parent{
+
+.btn-eraser,
+.btn--parent {
     margin-bottom: 8px;
 }
-.btn:active, .btn-result:active, .btn-eraser:active, .btn-clear:active{
+
+.btn:active,
+.btn-result:active,
+.btn-eraser:active,
+.btn-clear:active {
     border: 1px groove rgb(8, 71, 8);
 }
-.btn-result{
-    height: 3rem;
+
+.btn-result {
+    height: 4rem;
 }
